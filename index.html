@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ComicCraft - AI Comic Creator</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+      <h1>🎨 ComicCraft</h1>
+          <p>AI Comic Story Creator using Gemini Models</p>
+            </div>
+              <form action="/generate" method="post" class="card">
+                  <label>Story Prompt *</label>
+                      <textarea name="story_prompt" required placeholder="e.g. A brave cat who saves Coimbatore from robots">A brave cat who saves Coimbatore from robots</textarea>
+
+                          <label>Character Name</label>
+                              <input name="character_name" value="Hero Cat" required>
+
+                                  <label>Setting</label>
+                                      <input name="setting" value="Futuristic Coimbatore" required>
+
+                                          <div class="row">
+                                                <div>
+                                                        <label>Story Tone</label>
+                                                                <select name="story_tone">
+                                                                          <option>Adventure</option>
+                                                                                    <option>Funny</option>
+                                                                                              <option>Dark</option>
+                                                                                                        <option>Sci-Fi</option>
+                                                                                                                  <option>Dramatic</option>
+                                                                                                                          </select>
+                                                                                                                                </div>
+                                                                                                                                      <div>
+                                                                                                                                              <label>Art Style</label>
+                                                                                                                                                      <select name="art_style">
+                                                                                                                                                                <option>Comic book style, vibrant colors</option>
+                                                                                                                                                                          <option>Anime style, manga</option>
+                                                                                                                                                                                    <option>Pixar style, 3d render</option>
+                                                                                                                                                                                              <option>Watercolor comic</option>
+                                                                                                                                                                                                        <option>Dark noir comic</option>
+                                                                                                                                                                                                                </select>
+                                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                                          </div>
+
+                                                                                                                                                                                                                              <button type="submit">Generate Comic 🚀</button>
+                                                                                                                                                                                                                                  <p class="hint">Mock mode works without API keys. Add GEMINI_API_KEY to.env for real AI.</p>
+                                                                                                                                                                                                                                    </form>
+                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                    </body>
+                                                                                                                                                                                                                                    </html>
